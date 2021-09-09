@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search results</title>
+</head>
+<body>
+    <ul>
+        {% for journey in journeys %}
+        <li>From: {{ journey["source"] }} To: {{ journey["destination"] }} Departure time: {{ journey["departure_time"] }} Arrival time: {{ journey["arrival_time"] }} Price: {{ journey["price"] }} Free seats: {{ journey["free_seats"] }}</li>
+        {% endfor %}
+
+    </ul>
+</body>
+</html>
